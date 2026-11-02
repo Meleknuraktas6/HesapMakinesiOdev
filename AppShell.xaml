@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:HesapMakinesi"
+    x:Class="HesapMakinesi.AppShell"
+    Title="Hesap Makinesi">
+
+    <Shell.ItemTemplate>
+        <DataTemplate>
+            <Grid Padding="12" HeightRequest="50">
+                <Label
+                    Text="{Binding Title}"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    VerticalTextAlignment="Center"
+                    TextColor="{AppThemeBinding Light=#202020, Dark=#FFFFFF}" />
+            </Grid>
+        </DataTemplate>
+    </Shell.ItemTemplate>
+
+    <FlyoutItem Title="Standart">
+        <ShellContent
+            Title="Standart"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Bilimsel">
+        <ShellContent
+            Title="Bilimsel"
+            ContentTemplate="{DataTemplate local:ScientificPage}"
+            Route="ScientificPage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Ayarlar">
+        <ShellContent
+            Title="Ayarlar"
+            ContentTemplate="{DataTemplate local:SettingsPage}"
+            Route="SettingsPage" />
+    </FlyoutItem>
+
+</Shell>

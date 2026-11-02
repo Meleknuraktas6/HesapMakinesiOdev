@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HesapMakinesiÖdev1.Resources.Dictionary1">
+
+
+    <Color x:Key="LightBackground">#F3F3F3</Color>
+    <Color x:Key="LightSurface">#FFFFFF</Color>
+    <Color x:Key="LightText">#202020</Color>
+    <Color x:Key="LightSecondary">#E5E5E5</Color>
+
+    
+    <Color x:Key="DarkBackground">#202020</Color>
+    <Color x:Key="DarkSurface">#303030</Color>
+    <Color x:Key="DarkText">#FFFFFF</Color>
+    <Color x:Key="DarkSecondary">#454545</Color>
+
+    
+    <Color x:Key="AccentColor">#0078D4</Color>
+    <Color x:Key="OperatorColor">#DCEBFA</Color>
+
+
+
+</ResourceDictionary>

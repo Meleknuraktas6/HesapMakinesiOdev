@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="HesapMakinesi.MainPage"
+    Title="Standart">
+
+    <Grid Padding="15"
+          RowDefinitions="Auto,*,Auto"
+          BackgroundColor="{AppThemeBinding Light={StaticResource LightBackground}, Dark={StaticResource DarkBackground}}">
+
+       
+        <VerticalStackLayout Grid.Row="0"
+                             Padding="10"
+                             Spacing="10">
+
+            <Label Text="Standart Hesap Makinesi"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   TextColor="{AppThemeBinding Light={StaticResource LightText}, Dark={StaticResource DarkText}}"/>
+
+            <Label x:Name="HistoryLabel"
+                   Text=""
+                   FontSize="16"
+                   HorizontalTextAlignment="End"
+                   TextColor="{AppThemeBinding Light={StaticResource LightText}, Dark={StaticResource DarkText}}"/>
+
+            <Label x:Name="DisplayLabel"
+                   Text="0"
+                   FontSize="45"
+                   HorizontalTextAlignment="End"
+                   TextColor="{AppThemeBinding Light={StaticResource LightText}, Dark={StaticResource DarkText}}"/>
+        </VerticalStackLayout>
+
+      
+        <Grid Grid.Row="1"
+              RowDefinitions="*,*,*,*,*"
+              ColumnDefinitions="*,*,*,*"
+              RowSpacing="8"
+              ColumnSpacing="8">
+
+            <Button Text="%" Grid.Row="0" Grid.Column="0"/>
+            <Button Text="CE" Grid.Row="0" Grid.Column="1"/>
+            <Button Text="C" Grid.Row="0" Grid.Column="2"/>
+            <Button Text="⌫" Grid.Row="0" Grid.Column="3"/>
+
+            <Button Text="1/x" Grid.Row="1" Grid.Column="0"/>
+            <Button Text="x²" Grid.Row="1" Grid.Column="1"/>
+            <Button Text="√x" Grid.Row="1" Grid.Column="2"/>
+            <Button Text="÷" Style="{StaticResource OperatorButtonStyle}" Grid.Row="1" Grid.Column="3"/>
+
+            <Button Text="7" Style="{StaticResource NumberButtonStyle}" Grid.Row="2" Grid.Column="0"/>
+            <Button Text="8" Style="{StaticResource NumberButtonStyle}" Grid.Row="2" Grid.Column="1"/>
+            <Button Text="9" Style="{StaticResource NumberButtonStyle}" Grid.Row="2" Grid.Column="2"/>
+            <Button Text="×" Style="{StaticResource OperatorButtonStyle}" Grid.Row="2" Grid.Column="3"/>
+
+            <Button Text="4" Style="{StaticResource NumberButtonStyle}" Grid.Row="3" Grid.Column="0"/>
+            <Button Text="5" Style="{StaticResource NumberButtonStyle}" Grid.Row="3" Grid.Column="1"/>
+            <Button Text="6" Style="{StaticResource NumberButtonStyle}" Grid.Row="3" Grid.Column="2"/>
+            <Button Text="-" Style="{StaticResource OperatorButtonStyle}" Grid.Row="3" Grid.Column="3"/>
+
+            <Button Text="1" Style="{StaticResource NumberButtonStyle}" Grid.Row="4" Grid.Column="0"/>
+            <Button Text="2" Style="{StaticResource NumberButtonStyle}" Grid.Row="4" Grid.Column="1"/>
+            <Button Text="3" Style="{StaticResource NumberButtonStyle}" Grid.Row="4" Grid.Column="2"/>
+            <Button Text="+" Style="{StaticResource OperatorButtonStyle}" Grid.Row="4" Grid.Column="3"/>
+
+        </Grid>
+
+        <Grid Grid.Row="2"
+              ColumnDefinitions="*,*,*,*"
+              ColumnSpacing="8"
+              Margin="0,8,0,0">
+
+            <Button Text="+/-" Grid.Column="0"/>
+            <Button Text="0" Style="{StaticResource NumberButtonStyle}" Grid.Column="1"/>
+            <Button Text="." Grid.Column="2"/>
+            <Button Text="=" Style="{StaticResource EqualButtonStyle}" Grid.Column="3"/>
+
+        </Grid>
+
+    </Grid>
+
+</ContentPage>
